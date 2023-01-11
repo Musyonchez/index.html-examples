@@ -1,72 +1,83 @@
-body{
-  background: #2f4f4f;
+* {
+	font-family: 'Montserrat', sans-serif;
 }
-h1{
-  font-size: 54px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  font-family: 'Odibee Sans', cursive;
-  margin-bottom: 0;
+.bg-light {
+	background-color: transparent !important;
 }
-
-#css {
-  color: yellow;
-  font-family: 'Odibee Sans', cursive;
-}
-
-.carousel-wrapper {
-  height: 400px;
-  position: relative;
-  width: 800px;
-  display: block;
-  margin: 50px auto ;
-  border: 2px solid black;
-}
-
 .carousel-item {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 25px 50px;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+	height: 100vh;
+	min-height: 300px;
 }
-.arrow{
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 12px;
+.carousel-caption {
+	bottom: 180px;
 }
-.arrow-prev {
-  left: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(135deg);
+.carousel-caption h5 {
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 52px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 0.9;
+	margin-top: 0px;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: darkorange;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #000;
+	margin-top: 80px;
+	
+}
+.navbar-nav a {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+.w-100 {
+	height: 100vh;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.carousel-caption {
+		bottom: 165px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
 
+	}
 }
-.arrow-next {
-  right: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-[id^= "item"] {
-  display: none;
-}
-.item-1 {
-  background: url('images/homecarouselone.jpg');
-  background-size: cover;
-}
-.item-2 {
-  background: url('images/homecarouseltwo.jpg');
-  background-size: cover;
-}
-.item-3 {
-  background: url('images/homecarouselthree.jpg');
-  background-size: cover;
-}
- 
